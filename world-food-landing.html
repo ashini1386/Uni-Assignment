@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="only light">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>سفر ذائقه | غذاهای معروف دنیا</title>
+<!-- برای شخصی‌سازی: نام برند (سفر ذائقه)، لینک‌ها و متن‌ها را عوض کنید. -->
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:only light;
+  --bg:#EDF2E8;--surface:#FFFFFF;--ink:#1F2B24;--muted:#56645B;--red:#E5432D;--saffron:#F5B82E;--green:#2E6B4F;--line:#D3DCCB;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;line-height:1.9}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-weight:800;font-size:1.5rem}
+.logo i{font-style:normal;color:var(--red)}
+nav a{margin-inline-start:24px;font-size:.95rem;color:var(--muted)}
+nav a.pill{background:var(--ink);color:#fff;padding:6px 18px;border-radius:999px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;padding:24px 0 76px}
+h1{font-size:clamp(2.1rem,5.8vw,3.8rem);line-height:1.35;font-weight:800;margin:0 0 18px}
+h1 mark{background:var(--saffron);color:var(--ink);padding:0 12px;border-radius:10px}
+.hero p{font-size:1.12rem;color:var(--muted);max-width:30rem;margin:0 0 30px}
+.btn{display:inline-block;padding:13px 30px;border-radius:14px;font-weight:600;border:2px solid var(--ink);transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.fill{background:var(--red);border-color:var(--red);color:#fff;box-shadow:4px 4px 0 var(--ink)}
+.btn.ghost{margin-inline-start:10px}
+.plate{width:100%;max-width:400px;margin:0 auto;display:block}
+.steam{animation:st 3s ease-in-out infinite}
+.steam:nth-child(2){animation-delay:.8s}.steam:nth-child(3){animation-delay:1.6s}
+@keyframes st{0%,100%{opacity:.2;transform:translateY(6px)}50%{opacity:.9;transform:translateY(-6px)}}
+@media (prefers-reduced-motion: reduce){.steam{animation:none;opacity:.6}}
+.band{background:var(--ink);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0;font-weight:600;letter-spacing:.02em}
+.band span{display:inline-block;padding-inline:22px;color:var(--saffron)}
+section{padding:72px 0}
+h2{font-size:clamp(1.55rem,3.6vw,2.25rem);margin:0 0 10px;font-weight:800}
+.sub{color:var(--muted);margin:0 0 36px;max-width:36rem}
+.foods{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.food{background:var(--surface);border:2px solid var(--ink);border-radius:20px;padding:20px 18px 22px;transition:transform .25s,box-shadow .25s}
+.food:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--ink)}
+.em{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font-size:1.9rem;margin-bottom:12px}
+.food small{color:var(--red);font-weight:600}
+.food b{display:block;font-size:1.15rem}
+.food p{margin:4px 0 0;font-size:.9rem;color:var(--muted);line-height:1.8}
+.facts{background:var(--surface);border-block:2px solid var(--ink)}
+.f-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.f-grid h3{margin:0 0 6px;font-size:1.15rem;color:var(--green)}
+.f-grid h3::before{content:"●";color:var(--saffron);margin-inline-end:8px}
+.f-grid p{margin:0;color:var(--muted)}
+.cta{background:var(--green);color:#fff;text-align:center;border-radius:28px;padding:56px 24px;border:2px solid var(--ink)}
+.cta p{color:#D6EBDF;margin:0 0 26px}
+.cta .btn{background:var(--saffron);border-color:var(--ink);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+footer{padding:30px 0 44px;color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;padding-bottom:48px}
+  .plate{max-width:270px;order:-1}
+  .foods{grid-template-columns:repeat(2,1fr)}
+  .f-grid{grid-template-columns:1fr;gap:22px}
+  nav a:not(.pill){display:none}
+  section{padding:50px 0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">سفر <i>ذائقه</i></div>
+    <nav><a href="#foods">غذاها</a><a href="#facts">دانستنی‌ها</a><a class="pill" href="#join">عضویت</a></nav>
+  </header>
+  <div class="hero-grid">
+    <div>
+      <h1>دور دنیا با <mark>غذا</mark> بگردید</h1>
+      <p>معروف‌ترین غذاهای کشورهای مختلف را بشناسید؛ از قورمه‌سبزی ایرانی تا سوشی ژاپنی، با داستان کوتاه هر کدام.</p>
+      <a class="btn fill" href="#foods">شروع سفر</a>
+      <a class="btn ghost" href="#join">دستور پخت هفتگی</a>
+    </div>
+    <svg class="plate" viewBox="0 0 400 300" role="img" aria-label="کاسه‌ی غذای داغ با بخار">
+      <g fill="none" stroke="#56645B" stroke-width="6" stroke-linecap="round">
+        <path class="steam" d="M150 80 q-14 -18 0 -36 q14 -18 0 -36"/>
+        <path class="steam" d="M200 80 q-14 -18 0 -36 q14 -18 0 -36"/>
+        <path class="steam" d="M250 80 q-14 -18 0 -36 q14 -18 0 -36"/>
+      </g>
+      <ellipse cx="200" cy="120" rx="130" ry="30" fill="#1F2B24"/>
+      <ellipse cx="200" cy="118" rx="118" ry="24" fill="#E5432D"/>
+      <g fill="#F5B82E"><circle cx="150" cy="116" r="9"/><circle cx="200" cy="124" r="10"/><circle cx="248" cy="114" r="8"/><circle cx="176" cy="108" r="6"/></g>
+      <g fill="#2E6B4F"><circle cx="222" cy="108" r="6"/><circle cx="130" cy="124" r="6"/><circle cx="270" cy="124" r="5"/></g>
+      <path d="M70 120 Q70 250 200 262 Q330 250 330 120 Q200 160 70 120Z" fill="#fff" stroke="#1F2B24" stroke-width="6"/>
+      <path d="M96 168 Q200 200 304 168" fill="none" stroke="#F5B82E" stroke-width="10" stroke-linecap="round"/>
+      <rect x="160" y="262" width="80" height="14" rx="7" fill="#1F2B24"/>
+    </svg>
+  </div>
+</div>
+
+<div class="band" aria-hidden="true"><span>ایران</span>✦<span>ایتالیا</span>✦<span>ژاپن</span>✦<span>مکزیک</span>✦<span>هند</span>✦<span>ترکیه</span>✦<span>فرانسه</span>✦<span>تایلند</span>✦</div>
+
+<section id="foods">
+  <div class="wrap">
+    <h2>غذاهای معروف دنیا</h2>
+    <p class="sub">هشت کشور، هشت غذای شناخته‌شده که ارزش چشیدن دارند.</p>
+    <div class="foods">
+      <div class="food"><div class="em" style="background:#DDEFD9">🍲</div><small>ایران</small><b>قورمه‌سبزی</b><p>خورشت سبزی‌های معطر با لوبیا و لیمو عمانی که کنار برنج می‌نشیند.</p></div>
+      <div class="food"><div class="em" style="background:#FFE1D8">🍕</div><small>ایتالیا</small><b>پیتزا ناپلی</b><p>خمیر نازک و پخت سریع در کوره‌ی داغ؛ زادگاهش شهر ناپل است.</p></div>
+      <div class="food"><div class="em" style="background:#FFF0C2">🍣</div><small>ژاپن</small><b>سوشی</b><p>برنج با طعم سرکه همراه ماهی تازه یا سبزیجات، با ظرافت فراوان.</p></div>
+      <div class="food"><div class="em" style="background:#FFE1D8">🌮</div><small>مکزیک</small><b>تاکو</b><p>تورتیلای ذرت با گوشت، سبزی و سس تند؛ ذرت پایه‌ی غذاهای مکزیکی است.</p></div>
+      <div class="food"><div class="em" style="background:#FFF0C2">🍛</div><small>هند</small><b>بریانی</b><p>برنج و ادویه‌های معطر همراه مرغ یا گوشت که با هم دم می‌شوند.</p></div>
+      <div class="food"><div class="em" style="background:#DDEFD9">🥙</div><small>ترکیه</small><b>دونر کباب</b><p>گوشت برش‌خورده از سیخ عمودی، داخل نان با سالاد و سس.</p></div>
+      <div class="food"><div class="em" style="background:#FFF0C2">🥐</div><small>فرانسه</small><b>کروسان</b><p>نان لایه‌لایه‌ی کره‌ای که صبحانه‌ی معروف قنادی‌های فرانسه است.</p></div>
+      <div class="food"><div class="em" style="background:#FFE1D8">🍜</div><small>تایلند</small><b>پد تای</b><p>نودل برنجی تفت‌داده با تخم‌مرغ، بادام زمینی و لیمو.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="facts" id="facts">
+  <div class="wrap">
+    <h2>بدانید که</h2>
+    <p class="sub">چند نکته‌ی جالب درباره‌ی غذاهای دنیا.</p>
+    <div class="f-grid">
+      <div><h3>پیتزا مارگاریتا</h3><p>می‌گویند رنگ‌های قرمز، سفید و سبزش به رنگ‌های پرچم ایتالیا اشاره دارد.</p></div>
+      <div><h3>ذرت در مکزیک</h3><p>ذرت هزاران سال است در مکزیک کشت می‌شود و تورتیلا از آن ساخته می‌شود.</p></div>
+      <div><h3>برنج در سوشی</h3><p>اصل سوشی به برنجی گفته می‌شود که با سرکه طعم داده شده است، نه فقط ماهی خام.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="wrap">
+    <div class="cta">
+      <h2>هر هفته یک غذای تازه</h2>
+      <p>داستان یک غذای معروف و دستور ساده‌ی آن را برایتان می‌فرستیم.</p>
+      <a class="btn" href="https://t.me/your_channel">عضویت در کانال تلگرام</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer><span>© سفر ذائقه</span><span>لینک اینستاگرام یا ایمیل را اینجا بگذارید</span></footer>
+</div>
+</body>
+</html>
